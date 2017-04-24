@@ -1,6 +1,8 @@
 package com.ToDo.todoTasks.activities;
 
 import android.app.Activity;
+import android.content.Context;
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
@@ -50,7 +52,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        getSupportActionBar().hide();
+        if(getSupportActionBar() != null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         initViews();
         initListeners();
@@ -99,11 +103,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     }
 
 
-    /**
-     * This implemented method is to listen the click on view
-     *
-     * @param v
-     */
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -160,7 +160,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     }
 
-    
+
 
     /**
      * This method is to empty all input edit text
@@ -172,6 +172,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         textInputEditTextConfirmPassword.setText(null);
     }
 
+   
 
 
 

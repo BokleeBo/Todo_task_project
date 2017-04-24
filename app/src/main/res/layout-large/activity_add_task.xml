@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+=======
+>>>>>>> Initial commit
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
@@ -26,12 +29,20 @@
             android:maxLength="20"
             android:maxLines="2"
             android:padding="20dp"
+<<<<<<< HEAD
+=======
+            android:textColor="@android:color/white"
+>>>>>>> Initial commit
             android:scrollbars="vertical"
             android:textAlignment="viewStart"
             android:textColorHint="@android:color/background_light"
             android:textSize="18sp" />
 
         <EditText
+<<<<<<< HEAD
+=======
+            android:textColor="@android:color/white"
+>>>>>>> Initial commit
             android:id="@+id/contentDescId"
             android:layout_width="match_parent"
             android:layout_height="150dp"
@@ -40,7 +51,11 @@
             android:gravity="top"
             android:hint="@string/contentUser"
             android:inputType="textMultiLine"
+<<<<<<< HEAD
             android:maxLines="1"
+=======
+            android:maxLines="4"
+>>>>>>> Initial commit
             android:padding="20dp"
             android:scrollbars="vertical"
             android:textColorHint="@android:color/background_light" />

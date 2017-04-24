@@ -15,13 +15,13 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="350dp"
         android:padding="16dp">
 
         <LinearLayout
             android:id="@+id/concentID"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="250dp"
             android:layout_toLeftOf="@+id/linearLayout2"
             android:layout_toStartOf="@+id/linearLayout2"
             android:orientation="vertical"
@@ -29,6 +29,8 @@
 
             <android.support.v7.widget.AppCompatTextView
                 android:id="@+id/textViewTitle"
+                android:gravity="center"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
