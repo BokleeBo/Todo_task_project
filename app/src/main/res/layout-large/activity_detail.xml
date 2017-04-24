@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context="com.ToDo.todoTasks.activities.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:hint="@string/titleEdit"
+            android:inputType="textMultiLine"
+            android:maxLength="20"
+            android:maxLines="2"
+            android:background="@drawable/large_edittext_border"
+            android:scrollbars="vertical"
+            android:textColorHint="@android:color/background_light"
+            android:textSize="30sp"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/editContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/contentEdit"
+            android:inputType="textMultiLine"
+            android:maxLength="20"
+            android:maxLines="2"
+            android:paddingBottom="50dp"
+            android:scrollbars="vertical"
+            android:background="@drawable/large_edittext_border"
+            android:textColorHint="@android:color/background_light"
+            android:textSize="30sp"
+            android:textAlignment="viewStart" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/black"
+        android:text="@string/confirm"
+        android:textSize="30sp"
+        android:padding="15dp" />
+</LinearLayout>

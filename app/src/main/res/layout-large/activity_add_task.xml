@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/titleID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/title"
+            android:inputType="textMultiLine"
+            android:maxLength="20"
+            android:maxLines="2"
+            android:padding="20dp"
+            android:scrollbars="vertical"
+            android:textAlignment="viewStart"
+            android:textColorHint="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/contentDescId"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/contentUser"
+            android:inputType="textMultiLine"
+            android:maxLines="1"
+            android:padding="20dp"
+            android:scrollbars="vertical"
+            android:textColorHint="@android:color/background_light" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addToDo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/background_dark"
+        android:clickable="false"
+        android:text="@string/add_item"
+        android:textSize="24sp" />
+</LinearLayout>

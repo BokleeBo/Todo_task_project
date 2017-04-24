@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.ToDo.todoTasks.activities.DetailActivity">
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:maxLength="20"
+        android:maxLines="2"
+        android:scrollbars="vertical"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/titleEdit"
+        android:textColorHint="@android:color/black" />
+
+    <EditText
+        android:id="@+id/editContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/contentEdit"
+        android:inputType="textMultiLine"
+        android:maxLength="20"
+        android:maxLines="2"
+        android:scrollbars="vertical"
+        android:paddingBottom="50dp"
+        android:textColorHint="@android:color/black" />
+
+    <Button
+        android:id="@+id/confirmID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/black"
+        android:text="@string/confirm" />
+</LinearLayout>
