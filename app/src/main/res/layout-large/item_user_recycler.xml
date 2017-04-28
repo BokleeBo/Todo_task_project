@@ -53,11 +53,11 @@
             android:id="@+id/actionsID"
             android:layout_width="wrap_content"
             android:layout_height="56dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
             android:gravity="center_vertical|end"
             android:orientation="horizontal"
-            tools:ignore="RtlHardcoded">
+            tools:ignore="RtlHardcoded"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
 
             <ImageView
                 android:id="@+id/editItem"
