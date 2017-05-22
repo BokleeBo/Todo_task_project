@@ -18,6 +18,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name="com.ToDo.todoTasks.activities.LoginActivity"
+            android:windowSoftInputMode="adjustPan"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,17 +28,20 @@
         </activity>
         <activity
             android:name="com.ToDo.todoTasks.activities.RegisterActivity"
-            android:theme="@style/AppTheme" />
-            android:screenOrientation="portrait" />
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
         <activity
             android:name="com.ToDo.todoTasks.activities.ToDoListActivity"
+            android:windowSoftInputMode="adjustPan"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.ToDo.todoTasks.activities.addTask"
             android:label="@string/title_activity_add_task"
             android:theme="@style/AppTheme" />
         <activity android:name="com.ToDo.todoTasks.activities.DetailActivity">
-
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
         </activity>
     </application>
 
