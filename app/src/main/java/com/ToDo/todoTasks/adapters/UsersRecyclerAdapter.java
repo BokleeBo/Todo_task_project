@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -83,15 +84,15 @@ public class UsersRecyclerAdapter extends RecyclerView.Adapter<UsersRecyclerAdap
 
         public AppCompatTextView textViewTitle;
         public AppCompatTextView textViewContent;
-        public ImageView del;
-        public ImageView edit;
+        public Button del;
+        public Button edit;
 
         public UserViewHolder(View view) {
             super(view);
             textViewTitle = (AppCompatTextView) view.findViewById(R.id.textViewTitle);
             textViewContent = (AppCompatTextView) view.findViewById(R.id.textViewContent);
-            del = (ImageView) view.findViewById(R.id.delIcon);
-            edit = (ImageView) view.findViewById(R.id.editItem);
+            del = (Button) view.findViewById(R.id.btnDel);
+            edit = (Button) view.findViewById(R.id.btnEdit);
 
         }
 

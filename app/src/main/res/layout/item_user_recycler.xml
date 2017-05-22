@@ -20,56 +20,69 @@
             android:id="@+id/concentID"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_toLeftOf="@+id/linearLayout2"
-            android:layout_toStartOf="@+id/linearLayout2"
+            android:layout_above="@+id/actionsID"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
             android:orientation="vertical"
-            tools:ignore="RtlHardcoded,UnknownId">
+            tools:ignore="NotSibling,RtlHardcoded,UnknownId">
 
             <android.support.v7.widget.AppCompatTextView
                 android:id="@+id/textViewTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="2"
+                android:gravity="fill_vertical"
+                android:maxLines="3"
+                android:minHeight="125dp"
+                android:text="djskdjksjd"
                 android:textAlignment="center"
                 android:textColor="@color/colorTextHint"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <android.support.v7.widget.AppCompatTextView
                 android:id="@+id/textViewContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="2"
+                android:ems="0"
+                android:gravity="left|fill_vertical"
+                android:text="disjdhskd"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
-                android:textSize="24sp" />
+                android:textSize="13sp" />
 
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/actionsID"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                tools:ignore="RtlHardcoded">
 
-        <LinearLayout
-            android:id="@+id/actionsID"
-            android:layout_width="wrap_content"
-            android:layout_height="56dp"
-            android:gravity="center_vertical|end"
-            android:orientation="horizontal"
-            tools:ignore="RtlHardcoded"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true">
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@color/EditBaby"
+                    android:text="@string/edit"
+                    android:textSize="18sp"
+                    tools:ignore="ButtonStyle,NestedWeights" />
 
-            <ImageView
-                android:id="@+id/editItem"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginRight="10dp"
-                android:contentDescription=""
-                card_view:srcCompat="@drawable/edit"
-                tools:ignore="ContentDescription,RtlHardcoded" />
+                <Button
+                    android:id="@+id/btnDel"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/DeleteBaby"
+                    android:text="@string/delete"
+                    android:textSize="18sp"
+                    tools:ignore="ButtonStyle" />
 
-            <ImageView
-                android:id="@+id/delIcon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                card_view:srcCompat="@drawable/delete"
-                tools:ignore="ContentDescription" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </RelativeLayout>

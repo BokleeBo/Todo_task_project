@@ -22,17 +22,18 @@
         tools:ignore="InefficientWeight" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <Button
-            android:text="@string/addItem"
-            android:layout_height="wrap_content"
             android:id="@+id/addId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="@android:color/black"
             android:onClick="openDialog"
-            android:layout_width="match_parent"
+            android:text="@string/addItem"
+            android:textSize="24sp"
             tools:ignore="ButtonStyle" />
 
     </LinearLayout>

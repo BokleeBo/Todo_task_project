@@ -6,4 +6,7 @@
     <color name="colorBackground">#413e4f</color>
     <color name="colorText">#FFFFFF</color>
     <color name="colorTextHint">#51d8c7</color>
+    <color name="Whitiy">#ffffff</color>
+    <color name="DeleteBaby">#050505</color>
+    <color name="EditBaby">#10786a</color>
 </resources>

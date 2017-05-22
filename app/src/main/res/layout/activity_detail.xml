@@ -12,14 +12,14 @@
         android:id="@+id/editTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/titleEdit"
         android:inputType="textMultiLine"
         android:maxLength="20"
         android:maxLines="2"
         android:scrollbars="vertical"
-        android:layout_marginTop="22dp"
-        android:ems="10"
-        android:hint="@string/titleEdit"
-        android:textColorHint="@android:color/black" />
+        android:textColorHint="@android:color/background_light" />
 
     <EditText
         android:id="@+id/editContent"
@@ -31,9 +31,9 @@
         android:inputType="textMultiLine"
         android:maxLength="20"
         android:maxLines="2"
-        android:scrollbars="vertical"
         android:paddingBottom="50dp"
-        android:textColorHint="@android:color/black" />
+        android:scrollbars="vertical"
+        android:textColorHint="@android:color/background_light" />
 
     <Button
         android:id="@+id/confirmID"
@@ -41,5 +41,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:background="@android:color/black"
-        android:text="@string/confirm" />
+        android:text="@string/confirm"
+        android:textSize="18sp" />
 </LinearLayout>

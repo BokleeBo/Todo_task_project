@@ -41,4 +41,8 @@
     <string name="already_a_member_login">Already a member? Login</string>
     <string name="no_data_available">no_data</string>
     <string name="adddddddd">Add</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="Content">Content</string>
+    <string name="error_field">title or content is empty</string>
 </resources>
